@@ -31,7 +31,7 @@ function thing (n){
     }
 }
 var result = thing(51);
-document.write(result)
+console.log(result)
 
 
 
