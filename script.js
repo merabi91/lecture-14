@@ -1,7 +1,17 @@
-var numbers = [15,53,22,198,10,28,16,70,33,951];
-for (var i=0; i < numbers.length; i++) {
-    console.log(numbers[i])
-}
+// 1)შექმენით ერთ განზომილებიანი მსაივი საიდანაც for ციკლის მეშვებოთ დაბეჭდავთ მასივში არსებულ ყველა ელემენტს
+
+
+// var numbers = [15,53,22,198,10,28,16,70,33,951];
+// for (var i=0; i < numbers.length; i++) {
+//     console.log(numbers[i])
+// }
+
+// {
+//    document.write(numbers[i]);
+// }
+
+
+
 
 // 2)შექმენიტ
 // ფუნქცია სადაც ერთ ფუნქციას გამოიყენებთ მოერე ფუნქციის პარამეტრად და if
@@ -9,15 +19,24 @@ for (var i=0; i < numbers.length; i++) {
 // მაღაზიაში არის 50 ლარზე მეტი ესეიგი ძვირია თუ 20-50 დიაპაზონშია მოქცეული
 // საშუალო თუ ნაკლები იაფი)
 
+function thing (n){
+    if(n>50){
+        return('ძვირია');
+    }
+    else if(n>=20 && n<=50){
+        return('საშუალო');
+    }
+    else {
+        return('იაფია');
+    }
+}
+var result = thing(51);
+document.write(result)
 
-// function display(x,secondfunc){
-
-// }
 
 
+// 3) მოცემული მასივიდან [ 15,53,22,198,10,28,16,70,33,951 ] დაბეჭდეთ მხოლოდ კენტი რიცხვები
 
-// function shefasebisfunc(price){
+// ვიდეო მასალა
 
-// }
-
-// display ()
+// https://www.youtube.com/watch?v=xjAu2Y2nJ34
