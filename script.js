@@ -19,19 +19,19 @@
 // მაღაზიაში არის 50 ლარზე მეტი ესეიგი ძვირია თუ 20-50 დიაპაზონშია მოქცეული
 // საშუალო თუ ნაკლები იაფი)
 
-function thing (n){
-    if(n>50){
-        return('ძვირია');
-    }
-    else if(n>=20 && n<=50){
-        return('საშუალო');
-    }
-    else {
-        return('იაფია');
-    }
+var price = prompt("ნივთის ფასი");
+
+if (price >50) {
+    alert ("ძვირია")
+} 
+else if (price >= 20 && price <=50) {
+    alert ("საშუალო")
 }
-var result = thing(51);
-console.log(result)
+else if (price < 20) {
+    alert ("იაფი")
+}
+console.log(price)
+
 
 
 
