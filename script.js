@@ -3,13 +3,8 @@
 
 // var numbers = [15,53,22,198,10,28,16,70,33,951];
 // for (var i=0; i < numbers.length; i++) {
-//     console.log(numbers[i])
+//     document.write(numbers[i])
 // }
-
-// {
-//    document.write(numbers[i]);
-// }
-
 
 
 
@@ -19,18 +14,29 @@
 // მაღაზიაში არის 50 ლარზე მეტი ესეიგი ძვირია თუ 20-50 დიაპაზონშია მოქცეული
 // საშუალო თუ ნაკლები იაფი)
 
-var price = prompt("ნივთის ფასი");
 
-if (price >50) {
-    alert ("ძვირია")
-} 
-else if (price >= 20 && price <=50) {
-    alert ("საშუალო")
+
+var strSum = prompt("ნივთის ფასი");
+function money(){
+    strSum;
 }
-else if (price < 20) {
-    alert ("იაფი")
+
+function price (){
+    money();
+
+    if (strSum >50) {
+        document.write ("ძვირია")
+    } 
+    else if (strSum >= 20 && strSum <=50) {
+        document.write ("საშუალო")
+    }
+    else if (strSum < 20) {
+        document.write ("იაფი")
+    }
 }
-console.log(price)
+price ();
+
+
 
 
 
@@ -40,3 +46,11 @@ console.log(price)
 // ვიდეო მასალა
 
 // https://www.youtube.com/watch?v=xjAu2Y2nJ34
+
+
+// var numbers = [15,53,22,198,10,28,16,70,33,951];
+// for (var i=0; i < numbers.length; i++) {
+//     if(numbers[i]%2 == 1) {
+//         document.write(numbers[i] + " ")
+//     }
+// }
